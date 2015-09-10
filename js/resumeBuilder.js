@@ -106,6 +106,7 @@ bio.display = function() {
             var formattedContactInfo = HTMLcontactGeneric.replace("%contact%", arrayOfContactInfo[infoKey]);
             var formattedContactInfo = formattedContactInfo.replace("%data%", bio.contacts[arrayOfContactInfo[infoKey]]);
             $("#topContacts").prepend(formattedContactInfo);
+            $("#footerContacts").prepend(formattedContactInfo);
         }
     }
 
